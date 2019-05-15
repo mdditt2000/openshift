@@ -1,25 +1,18 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: f5-hello-world
-  namespace: default
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: f5-hello-world
-  template:
-    metadata:
-      labels:
-        app: f5-hello-world
-    spec:
-      containers:
-      - env:
-        - name: service_name
-          value: f5-hello-world
-        image: f5devcentral/f5-hello-world:latest
-        imagePullPolicy: Always
-        name: f5-hello-world
-        ports:
-        - containerPort: 8080
-          protocol: TCP
+  apiVersion: extensions/v1beta1
+  kind: Deployment
+  metadata:
+    name: f5-hello-world
+  spec:
+    replicas: 2
+    template:
+      metadata:
+        labels:
+          run: f5-hello-world
+      spec:
+        containers:
+        - name: f5-hello-world
+          image: f5devcentral/f5-hello-world:latest
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 8080
+            protocol: TCP
