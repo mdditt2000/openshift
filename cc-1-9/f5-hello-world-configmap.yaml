@@ -13,7 +13,7 @@
           "frontend": {
             "balance": "round-robin",
             "mode": "http",
-            "partition": "ose",
+            "partition": "openshift",
             "virtualAddress": {
               "bindAddr": "10.192.75.106",
               "port": 80
