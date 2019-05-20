@@ -46,9 +46,7 @@
              "--openshift-sdn-name=/Common/openshift_vxlan",
              "--manage-routes=true",
              "--namespace=f5demo",
-             "--route-vserver-addr=10.192.75.106",
-             "--route-http-vserver=ocp-vserver",
-             "--route-https-vserver=ocp-https-vserver"
+             "--route-vserver-addr=10.192.75.106"
              ]
        imagePullSecrets:
          - name: f5-docker-images
