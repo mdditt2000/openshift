@@ -15,18 +15,3 @@
           ports:
           - containerPort: 8080
             protocol: TCP
-  ---
-  apiVersion: v1
-  kind: Service
-  metadata:
-    name: f5-demo-app-route
-    labels:
-      name: f5-demo-app-route
-    namespace: f5demo
-  spec:
-    type: ClusterIP
-    ports:
-    - port: 8080
-      targetPort: 8080
-    selector:
-      app: f5-demo-app-route
