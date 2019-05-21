@@ -3,7 +3,7 @@
   metadata:
     name: f5-demo-app-route
   spec:
-    replicas: 1
+    replicas: 4
     template:
       metadata:
         labels:
