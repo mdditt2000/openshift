@@ -1,0 +1,1 @@
+oc logs -f f5-server-854c47bc94-fsbv6 -n kube-system
