@@ -1,0 +1,17 @@
+  apiVersion: extensions/v1beta1
+  kind: Deployment
+  metadata:
+    name: f5-demo-app-route
+  spec:
+    replicas: 4
+    template:
+      metadata:
+        labels:
+          app: f5-demo-app-route
+      spec:
+        containers:
+        - name: f5-demo-app-route
+          image: f5devcentral/f5-hello-world:develop
+          ports:
+          - containerPort: 8080
+            protocol: TCP
