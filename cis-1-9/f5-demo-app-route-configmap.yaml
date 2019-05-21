@@ -7,7 +7,7 @@
       f5type: virtual-server
       as3: "true"
   data:
-    template: |
+  template: |
     {
         "class": "ADC",
         "schemaVersion": "3.10.0",
@@ -49,12 +49,7 @@
                         {
                             "addressDiscovery": "static",
                             "servicePort": 8080,
-                            "serverAddresses": [
-                                "10.129.0.27",
-                                "10.129.0.28",
-                                "10.129.0.29",
-                                "10.129.0.30"
-                            ]
+                            "serverAddresses": []
                         }
                     ],
                     "class": "Pool"
