@@ -1,4 +1,4 @@
-  apiVersion: v1
+apiVersion: v1
   kind: ConfigMap
   metadata:
     name: f5-demo-app-route
@@ -8,7 +8,7 @@
       as3: "true"
   data:
   template: |
-    {   
+    {
     "class": "AS3",
     "declaration": {
         "class": "ADC",
