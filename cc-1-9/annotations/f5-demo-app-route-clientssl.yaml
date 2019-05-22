@@ -7,8 +7,8 @@
     namespace: f5demo
     annotations:
       # no annotations
-      virtual-server.f5.com/clientssl: /Common/client-ssl
-      virtual-server.f5.com/serverssl: /Common/server-ssl
+      virtual-server.f5.com/clientssl: /Common/clientssl
+      virtual-server.f5.com/serverssl: /Common/serverssl
   spec:
     host: mysite.f5demo.com
     path: "/"
