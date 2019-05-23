@@ -12,7 +12,7 @@
     host: mysite.f5demo.com
     path: "/"
     port:
-      targetPort: 443
+      targetPort: 8080
     tls:
     certificate: |
       -----BEGIN CERTIFICATE-----
