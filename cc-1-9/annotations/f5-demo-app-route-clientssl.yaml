@@ -14,8 +14,7 @@
     port:
       targetPort: 8080
     tls:
-    termination: edge
-    insecureEdgeTerminationPolicy: Allow
+      termination: edge
     to:
       kind: Service
       name: f5-demo-app-route
