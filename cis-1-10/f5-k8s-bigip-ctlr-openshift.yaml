@@ -48,7 +48,7 @@
              "--namespace=f5demo",
              "--route-vserver-addr=10.192.75.106",
              "--log-level=DEBUG",
-             "--insecure=true"
+             "--insecure=true",
              "--agent=as3"
              ]
        imagePullSecrets:
