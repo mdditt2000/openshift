@@ -1,12 +1,12 @@
   apiVersion: v1
   kind: Service
   metadata:
-    name: f5-demo-app-route
+    name: f5-demo-app-route-basic
     labels:
-      name: f5-demo-app-route
+      name: f5-demo-app-route-basic
       cis.f5.com/as3-tenant: openshift
       cis.f5.com/as3-app: Shared
-      cis.f5.com/as3-pool: openshift_f5demo_f5_demo_app_route
+      cis.f5.com/as3-pool: openshift_f5demo_f5_demo_app_route_basic
     namespace: f5demo
   spec:
     type: ClusterIP
@@ -15,3 +15,21 @@
       targetPort: 8080
     selector:
       app: f5-demo-app-route
+  ---
+  apiVersion: v1
+    kind: Service
+    metadata:
+      name: f5-demo-app-route-health
+      labels:
+        name: f5-demo-app-route-health
+        cis.f5.com/as3-tenant: openshift
+        cis.f5.com/as3-app: Shared
+        cis.f5.com/as3-pool: openshift_f5demo_f5_demo_app_route_health
+      namespace: f5demo
+    spec:
+      type: ClusterIP
+      ports:
+      - port: 8080
+        targetPort: 8080
+      selector:
+        app: f5-demo-app-route
