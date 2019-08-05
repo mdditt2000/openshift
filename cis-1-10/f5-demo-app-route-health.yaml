@@ -24,4 +24,4 @@
       targetPort: 8080
     to:
       kind: Service
-      name: f5-demo-app-route
+      name: f5-demo-app-route-health
