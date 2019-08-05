@@ -2,8 +2,8 @@
   kind: Route
   metadata:
     labels:
-      name: f5-demo-app-route
-    name: f5-demo-app-route
+      name: f5-demo-app-route-health
+    name: f5-demo-app-route-health
     namespace: f5demo
     annotations:
       # Specify a supported BIG-IP load balancing mode
