@@ -16,7 +16,7 @@
        serviceAccountName: bigip-ctlr
        containers:
          - name: k8s-bigip-ctlr
-           image: "amit49g/k8s-bigip-ctlr:health-monitor"
+           image: "subbuv26/k8s-bigip-ctlr:tls_route_1"
            env:
              - name: BIGIP_USERNAME
                valueFrom:
