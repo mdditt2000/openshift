@@ -9,7 +9,7 @@
       # no annotations
   spec:
     host: mysite.f5demo.com
-    path: "/"
+    path: "/basic"
     port:
       targetPort: 8080
     to:

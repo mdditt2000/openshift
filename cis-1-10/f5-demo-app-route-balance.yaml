@@ -11,7 +11,7 @@
       virtual-server.f5.com/balance: least-connections-node
   spec:
     host: mysite.f5demo.com
-    path: "/"
+    path: "/balance"
     port:
       targetPort: 8080
     to:
