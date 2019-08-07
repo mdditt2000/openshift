@@ -36,6 +36,7 @@ oc create -f f5-demo-app-route-service.yaml -n f5demo
 oc create -f f5-demo-app-route-health.yaml -n f5demo
 oc create -f f5-demo-app-route-balance.yaml -n f5demo
 oc delete -f f5-demo-app-route-edge-ssl.yaml -n f5demo
+oc delete -f f5-demo-app-route-reencrypt-ssl.yaml -n f5demo
 ```
 ## Delete container f5-demo-app-route
 ```
@@ -44,4 +45,5 @@ oc delete -f f5-demo-app-route-service.yaml -n f5demo
 oc delete -f f5-demo-app-route-basic.yaml -n f5demo
 oc delete -f f5-demo-app-route-balance.yaml -n f5demo
 oc delete -f f5-demo-app-route-edge-ssl.yaml -n f5demo
+oc delete -f f5-demo-app-route-reencrypt-ssl.yaml -n f5demo
 ```
