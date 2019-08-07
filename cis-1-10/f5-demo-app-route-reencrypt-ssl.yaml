@@ -8,7 +8,7 @@
     annotations:
       # annotations
       # default clientssl profile
-      # health monitoring
+      # default serverssl profile
       virtual-server.f5.com/clientssl: /Common/clientssl
       virtual-server.f5.com/clientssl: /Common/serverssl
   spec:
