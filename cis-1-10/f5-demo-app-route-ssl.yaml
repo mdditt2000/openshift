@@ -2,12 +2,13 @@
   kind: Route
   metadata:
     labels:
-      name: f5-demo-app-route-basic-ssl
-    name: f5-demo-app-route-basic-ssl
+      name: f5-demo-app-route-ssl
+    name: f5-demo-app-route-ssl
     namespace: f5demo
     annotations:
       # no annotations
       # Provided certs
+      virtual-server.f5.com/clientssl: /Common/clientssl
   spec:
     host: mysite.f5demo.com
     path: "/"
@@ -15,4 +16,4 @@
       targetPort: 8080
     to:
       kind: Service
-      name: f5-demo-app-route-basic-ssl
+      name: f5-demo-app-route-ssl
