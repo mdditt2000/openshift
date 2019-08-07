@@ -17,22 +17,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-    name: f5-demo-app-route-health
-    labels:
-        name: f5-demo-app-route-health
-    namespace: f5demo
-spec:
-    type: ClusterIP
-    ports:
-        -
-            port: 8080
-            targetPort: 8080
-    selector:
-        app: f5-demo-app-route-health
----
-apiVersion: v1
-kind: Service
-metadata:
     name: f5-demo-app-route-balance
     labels:
         name: f5-demo-app-route-balance
@@ -49,9 +33,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-    name: f5-demo-app-route-ssl
+    name: f5-demo-app-route-edge-ssl
     labels:
-        name: f5-demo-app-route-ssl
+        name: f5-demo-app-route-edge-ssl
     namespace: f5demo
 spec:
     type: ClusterIP
@@ -60,4 +44,4 @@ spec:
             port: 8080
             targetPort: 8080
     selector:
-        app: f5-demo-app-route-ssl
+        app: f5-demo-app-route-edge-ssl

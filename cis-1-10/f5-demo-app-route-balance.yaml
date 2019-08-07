@@ -8,7 +8,17 @@
     annotations:
       # Specify a supported BIG-IP load balancing mode
       # Change from the default balance to least-connections-node
+      # health monitoring
       virtual-server.f5.com/balance: least-connections-node
+      virtual-server.f5.com/health: |
+        [
+          {
+            "path": "mysite.f5demo.com/",
+            "send": "HTTP GET /",
+            "interval": 5,
+            "timeout": 10
+          }
+        ]
   spec:
     host: mysite.f5demo.com
     path: "/balance"

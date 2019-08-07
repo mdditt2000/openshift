@@ -16,7 +16,7 @@
        serviceAccountName: bigip-ctlr
        containers:
          - name: k8s-bigip-ctlr
-           image: "subbuv26/k8s-bigip-ctlr:tls_route_ann"
+           image: "subbuv26/k8s-bigip-ctlr:tls_route_edge"
            env:
              - name: BIGIP_USERNAME
                valueFrom:

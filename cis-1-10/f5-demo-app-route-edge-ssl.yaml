@@ -2,12 +2,14 @@
   kind: Route
   metadata:
     labels:
-      name: f5-demo-app-route-health
-    name: f5-demo-app-route-health
+      name: f5-demo-app-route-edge-ssl
+    name: f5-demo-app-route-edge-ssl
     namespace: f5demo
     annotations:
-      # Specify a supported BIG-IP load balancing mode
-      # Create a health monitor
+      # annotations
+      # default clientssl profile
+      # health monitoring
+      virtual-server.f5.com/clientssl: /Common/clientssl
       virtual-server.f5.com/health: |
         [
           {
@@ -19,9 +21,11 @@
         ]
   spec:
     host: mysite.f5demo.com
-    path: "/health"
+    path: "/"
     port:
       targetPort: 8080
+    tls:
+      termination: edge
     to:
       kind: Service
-      name: f5-demo-app-route-health
+      name: f5-demo-app-route-edge-ssl

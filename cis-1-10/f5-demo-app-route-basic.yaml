@@ -6,7 +6,17 @@
     name: f5-demo-app-route-basic
     namespace: f5demo
     annotations:
-      # no annotations
+      # annotations
+      # health monitoring
+      virtual-server.f5.com/health: |
+        [
+          {
+            "path": "mysite.f5demo.com/",
+            "send": "HTTP GET /",
+            "interval": 5,
+            "timeout": 10
+          }
+        ]
   spec:
     host: mysite.f5demo.com
     path: "/"
