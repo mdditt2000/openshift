@@ -51,7 +51,7 @@ spec:
         ports:
         - containerPort: 8080
           protocol: TCP
-----
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
