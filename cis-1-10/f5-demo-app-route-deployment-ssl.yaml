@@ -1,19 +1,18 @@
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: f5-demo-app-route-reencrypt
-  namespace: f5demo
+  name: f5-demo-app-route-reencrypt-ssl
 spec:
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
-        app: f5-demo-app-route-reencrypt
+        app: f5-demo-app-route-reencrypt-ssl
     spec:
       containers:
-      - env:
-        image: f5devcentral/f5-demo-httpd
-        name: f5-demo-app-route
+      - name: f5-demo-app-route
+        image: f5networksdevel/test-nginx
         ports:
         - containerPort: 443
           protocol: TCP
