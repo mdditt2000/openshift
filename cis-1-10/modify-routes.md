@@ -13,12 +13,18 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 
 * AS3/CCCL arguments:
 Add extra argument in the CIS deployment if desired to use “as3” path  
+ ```
  --agent=as3
+ ```
 To use “cccl” path then use the below argument
+ ```
  --agent=cccl
+```
 
 * If you using BIGIP self-signed certs please
+ ```
  --insecure=true
+```
 
 Example f5-k8s-bigip-ctlr-openshift.yaml
 
@@ -46,6 +52,8 @@ oc create -f f5-demo-app-route-health.yaml -n f5demo
 oc create -f f5-demo-app-route-balance.yaml -n f5demo
 oc create -f f5-demo-app-route-edge-ssl.yaml -n f5demo
 ```
+Please look for example files in my repo
+
 ## Delete container f5-demo-app-route
 ```
 oc delete -f f5-demo-app-route-deployment.yaml -n f5demo
