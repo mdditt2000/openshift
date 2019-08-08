@@ -25,7 +25,7 @@ If you using BIGIP self-signed certs please add or schema validation will fail
  ```
  --insecure=true
 ```
-Example f5-k8s-bigip-ctlr-openshift.yaml
+Example folder https://github.com/mdditt2000/openshift/tree/dev/cis-1-10
 
 #Note: CCCL will be removed in the upcoming months. CCCL doesnt support BIG-IP v14.1
 
