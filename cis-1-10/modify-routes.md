@@ -13,7 +13,7 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 
 ### AS3/CCCL arguments:
 
-Add extra argument in the CIS deployment if desired to use “as3” path  
+Add argument in the CIS controller deployment to use “as3” path  
  ```
  --agent=as3
  ```
@@ -21,7 +21,7 @@ To use “cccl” path then use the below argument
  ```
  --agent=cccl
 ```
-If you using BIGIP self-signed certs please
+If you using BIGIP self-signed certs please add or schema validation will fail
  ```
  --insecure=true
 ```
