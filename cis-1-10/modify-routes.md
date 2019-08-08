@@ -11,7 +11,8 @@ CIS 1.10 is officailly posting on August 21st. However here is a early beta to p
 * Install AS3 on BIGIP
 https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/installation.html
 
-* AS3/CCCL arguments:
+### AS3/CCCL arguments:
+
 Add extra argument in the CIS deployment if desired to use “as3” path  
  ```
  --agent=as3
@@ -20,12 +21,10 @@ To use “cccl” path then use the below argument
  ```
  --agent=cccl
 ```
-
-* If you using BIGIP self-signed certs please
+If you using BIGIP self-signed certs please
  ```
  --insecure=true
 ```
-
 Example f5-k8s-bigip-ctlr-openshift.yaml
 
 #Note: CCCL will be removed in the upcoming months. CCCL doesnt support BIG-IP v14.1
