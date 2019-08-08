@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: f5-demo-app-route-basic
 spec:
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
@@ -21,7 +21,7 @@ kind: Deployment
 metadata:
   name: f5-demo-app-route-balance
 spec:
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
@@ -39,7 +39,7 @@ kind: Deployment
 metadata:
   name: f5-demo-app-route-edge-ssl
 spec:
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
@@ -52,20 +52,23 @@ spec:
         - containerPort: 8080
           protocol: TCP
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: f5-demo-app-route-reencrypt-ssl
 spec:
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
         app: f5-demo-app-route-reencrypt-ssl
     spec:
       containers:
-      - name: f5-demo-app-route
+      - name: service_name
+          value: f5-demo-app-route-reencrypt-ssl
         image: f5devcentral/f5-demo-httpd
+        imagePullPolicy: Always
+        name: f5-demo-app-route-reencrypt-ssl
         ports:
         - containerPort: 443
           protocol: TCP
