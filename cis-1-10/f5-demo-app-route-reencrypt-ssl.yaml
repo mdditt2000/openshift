@@ -10,7 +10,7 @@
       # default clientssl profile
       # default serverssl profile
       virtual-server.f5.com/clientssl: /Common/clientssl
-      virtual-server.f5.com/clientssl: /Common/serverssl
+      virtual-server.f5.com/serverssl: /Common/serverssl
   spec:
     host: mysite.f5demo.com
     path: "/"
