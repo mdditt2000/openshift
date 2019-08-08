@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Container Ingress Services 1.10 
 
 CIS build: amit49g/k8s-bigip-ctlr:latest
