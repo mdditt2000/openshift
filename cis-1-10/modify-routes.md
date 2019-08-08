@@ -2,7 +2,7 @@
 
 CIS 1.10 is officailly posting on August 21st. However here is a early beta to provide PM with feedback. Please open issues on my github page on contact me at m.dittmer@f5.com
 
-* CIS build: amit49g/k8s-bigip-ctlr:latest
+** CIS build: amit49g/k8s-bigip-ctlr:latest
 * AS3: 3.11.0-3
 * BIG-IP 14.1
  
