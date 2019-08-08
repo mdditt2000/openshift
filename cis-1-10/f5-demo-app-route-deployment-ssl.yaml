@@ -1,17 +1,18 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: f5-demo-app-route-reencrypt-ssl
+  name: f5-demo-app-route-reencrypt
+  namespace: f5demo
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
-        app: f5-demo-app-route-reencrypt-ssl
+        app: f5-demo-app-route-reencrypt
     spec:
       containers:
       - name: f5-demo-app-route
-        image: f5devcentral/f5-demo-httpd
+        image: chen23/f5-demo-app:openshift
         ports:
         - containerPort: 443
           protocol: TCP
