@@ -10,6 +10,8 @@ spec:
       labels:
         app: f5-demo-app-route-reencrypt
     spec:
+      serviceAccount: run-as-anyid
+      serviceAccountName: run-as-anyid
       containers:
       - env:
         - name: service_name
@@ -18,4 +20,6 @@ spec:
         name: f5-demo-app-route
         ports:
         - containerPort: 443
+          protocol: TCP
+        - containerPort: 80
           protocol: TCP
