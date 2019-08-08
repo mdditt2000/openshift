@@ -64,7 +64,7 @@ spec:
         app: f5-demo-app-route-reencrypt-ssl
     spec:
       containers:
-      - name: f5-demo-app-route-httpd
+      - name: f5-demo-app-route
         image: f5devcentral/f5-demo-httpd
         ports:
         - containerPort: 443
