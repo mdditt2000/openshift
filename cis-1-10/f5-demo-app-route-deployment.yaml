@@ -65,7 +65,7 @@ spec:
     spec:
       containers:
       - name: f5-demo-app-route
-        image: f5devcentral/f5-demo-httpd:openshift
+        image: f5devcentral/f5-demo-httpd
         ports:
         - containerPort: 443
           protocol: TCP
