@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: f5-demo-app-route
-        image: f5devcentral/f5-hello-world:develop
+        image: f5devcentral/f5-hello-world
         ports:
         - containerPort: 8080
           protocol: TCP
@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: f5-demo-app-route
-        image: f5devcentral/f5-hello-world:develop
+        image: f5devcentral/f5-hello-world
         ports:
         - containerPort: 8080
           protocol: TCP
@@ -47,7 +47,7 @@ spec:
     spec:
       containers:
       - name: f5-demo-app-route
-        image: f5devcentral/f5-hello-world:develop
+        image: f5devcentral/f5-hello-world
         ports:
         - containerPort: 8080
           protocol: TCP
