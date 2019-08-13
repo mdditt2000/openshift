@@ -2,7 +2,7 @@
 
 CIS 1.10 is officailly posting on August 21st. However here is a early beta to provide PM with feedback. Please open issues on my github page on contact me at m.dittmer@f5.com
 
-* CIS build: amit49g/k8s-bigip-ctlr:latest
+* CIS build: subbuv26/k8s-bigip-ctlr:route_bug_fixes
 * AS3: 3.11.0-3
 * BIG-IP 14.1
 
@@ -50,6 +50,7 @@ oc create -f f5-demo-app-route-service.yaml -n f5demo
 oc create -f f5-demo-app-route-basic.yaml -n f5demo
 oc create -f f5-demo-app-route-balance.yaml -n f5demo
 oc create -f f5-demo-app-route-edge-ssl.yaml -n f5demo
+oc create -f f5-demo-app-route-reencrypt-ssl.yaml -n f5demo
 ```
 Please look for example files in my repo
 
@@ -60,7 +61,7 @@ oc delete -f f5-demo-app-route-service.yaml -n f5demo
 oc delete -f f5-demo-app-route-basic.yaml -n f5demo
 oc delete -f f5-demo-app-route-balance.yaml -n f5demo
 oc delete -f f5-demo-app-route-edge-ssl.yaml -n f5demo
+oc create -f f5-demo-app-route-reencrypt-ssl.yaml -n f5demo
 ```
 Coming next
-* re-encrypt
 * passthrough
