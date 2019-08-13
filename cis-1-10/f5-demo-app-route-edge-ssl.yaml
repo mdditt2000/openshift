@@ -21,7 +21,7 @@
         ]
   spec:
     host: mysite.f5demo.com
-    path: "/"
+    path: "/edge"
     port:
       targetPort: 8080
     tls:
