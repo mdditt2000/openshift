@@ -9,11 +9,11 @@
       # annotations
   spec:
     host: mysite.f5demo.com
-    path: "/"
+    # path: "/myApp"
     port:
       targetPort: 443
     tls:
-      insecureEdgeTerminationPolicy: Redirect
+      # insecureEdgeTerminationPolicy: Redirect
       termination: passthrough
     to:
       kind: Service
