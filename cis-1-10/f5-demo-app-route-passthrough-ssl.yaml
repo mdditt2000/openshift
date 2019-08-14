@@ -13,7 +13,6 @@
     port:
       targetPort: 443
     tls:
-      insecureEdgeTerminationPolicy: Redirect
       termination: passthrough
     to:
       kind: Service

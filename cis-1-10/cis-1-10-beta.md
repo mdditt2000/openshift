@@ -67,7 +67,7 @@ oc delete -f f5-demo-app-route-passthrough-ssl.yaml -n f5demo
 ```
 ## Notes
 
-* insecureEdgeTerminationPolicy field spec is not working with reencrypt route. This feature is not availalbe in CC
+* insecureEdgeTerminationPolicy field spec is not working with reencrypt/passthrough route. This feature is not implemented in CC
 * CIS not pushing configuration in BIGIP when there is a deletion of resource from BIGIP. CIS is source-of-truth
 
 ## Coming in CIS 1.11 scheduled for late September
