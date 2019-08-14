@@ -9,7 +9,7 @@
       # annotations
   spec:
     host: mysite.f5demo.com
-    # path: "/myApp"
+    # path: no path required in passthrough
     port:
       targetPort: 443
     tls:
