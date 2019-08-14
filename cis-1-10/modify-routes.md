@@ -2,7 +2,7 @@
 
 CIS 1.10 is officailly posting on August 21st. However here is a early beta to provide PM with feedback. Please open issues on my github page on contact me at m.dittmer@f5.com
 
-* CIS build: subbuv26/k8s-bigip-ctlr:route_bug_fixes
+* CIS build: subbuv26/k8s-bigip-ctlr:1.10.0-cf1
 * AS3: 3.11.0-3
 * BIG-IP 14.1
 
@@ -51,6 +51,7 @@ oc create -f f5-demo-app-route-basic.yaml -n f5demo
 oc create -f f5-demo-app-route-balance.yaml -n f5demo
 oc create -f f5-demo-app-route-edge-ssl.yaml -n f5demo
 oc create -f f5-demo-app-route-reencrypt-ssl.yaml -n f5demo
+oc create -f f5-demo-app-route-passthrough-ssl.yaml -n f5demo
 ```
 Please look for example files in my repo
 
@@ -61,7 +62,16 @@ oc delete -f f5-demo-app-route-service.yaml -n f5demo
 oc delete -f f5-demo-app-route-basic.yaml -n f5demo
 oc delete -f f5-demo-app-route-balance.yaml -n f5demo
 oc delete -f f5-demo-app-route-edge-ssl.yaml -n f5demo
-oc create -f f5-demo-app-route-reencrypt-ssl.yaml -n f5demo
+oc delete -f f5-demo-app-route-reencrypt-ssl.yaml -n f5demo
+oc delete -f f5-demo-app-route-passthrough-ssl.yaml -n f5demo
 ```
-Coming next
-* passthrough
+## Notes
+
+* insecureEdgeTerminationPolicy field spec is not working with reencrypt route. This feature is not availalbe in CC
+* CIS not pushing configuration in BIGIP when there is a deletion of resource from BIGIP. CIS is source-of-truth
+
+## Coming in CIS 1.11 scheduled for late September
+
+* WAF policy support
+* wildcards
+* OpenShift 4.1
