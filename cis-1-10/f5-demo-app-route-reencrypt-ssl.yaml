@@ -17,7 +17,6 @@
     port:
       targetPort: 443
     tls:
-      insecureEdgeTerminationPolicy: Redirect
       termination: reencrypt
     to:
       kind: Service

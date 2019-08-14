@@ -19,7 +19,7 @@
         ]
   spec:
     host: mysite.f5demo.com
-    path: "/basic"
+    path: "/"
     port:
       targetPort: 8080
     to:

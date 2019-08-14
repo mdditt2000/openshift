@@ -61,3 +61,19 @@ spec:
             targetPort: 443
     selector:
         app: f5-demo-app-route-reencrypt-ssl
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: f5-demo-app-route-passthrough-ssl
+    labels:
+        name: f5-demo-app-route-passthrough-ssl
+    namespace: f5demo
+spec:
+    type: ClusterIP
+    ports:
+        -
+            port: 443
+            targetPort: 443
+    selector:
+        app: f5-demo-app-route-passthrough-ssl
