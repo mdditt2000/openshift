@@ -1,8 +1,8 @@
-# Container Ingress Services 1.10 Beta
+# Container Ingress Services 1.10
 
-CIS 1.10 is officailly posting on August 21st. However here is a early beta to provide PM with feedback. Please open issues on my github page on contact me at m.dittmer@f5.com
+CIS 1.10 has officailly posted. However here is some demo examples to provide PM with feedback. Please open issues on my github page on contact me at m.dittmer@f5.com
 
-* CIS build: subbuv26/k8s-bigip-ctlr:1.10.0-cf1
+* CIS build: f5networks/k8s-bigip-ctlr:1.10.0
 * AS3: 3.11.0-3
 * BIG-IP 14.1
 
