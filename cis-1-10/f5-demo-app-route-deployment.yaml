@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: f5-demo-app-route-basic
 spec:
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
@@ -21,7 +21,7 @@ kind: Deployment
 metadata:
   name: f5-demo-app-route-balance
 spec:
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
@@ -39,7 +39,7 @@ kind: Deployment
 metadata:
   name: f5-demo-app-route-edge-ssl
 spec:
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
@@ -57,7 +57,7 @@ kind: Deployment
 metadata:
   name: f5-demo-app-route-reencrypt-ssl
 spec:
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
@@ -75,7 +75,7 @@ kind: Deployment
 metadata:
   name: f5-demo-app-route-passthrough-ssl
 spec:
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
