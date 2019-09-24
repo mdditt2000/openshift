@@ -2,7 +2,12 @@
 
 This page is created to provide early access to CIS 1.11 to provide PM with feedback. Please open issues on my github page on contact me at m.dittmer@f5.com
 
-* CIS build: subbuv26/k8s-bigip-ctlr:waf2
+# Note
+
+Waiting for a merge request of all the features. Merge coming soon
+
+* CIS waf build: subbuv26/k8s-bigip-ctlr:waf2
+* CIS a/b build: amit49g/k8s-bigip-ctlr:ab-support
 * AS3: 3.13.1
 * BIG-IP 14.1
 
