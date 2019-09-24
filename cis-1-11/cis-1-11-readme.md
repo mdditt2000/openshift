@@ -34,6 +34,19 @@ Example folder https://github.com/mdditt2000/openshift/tree/dev/cis-1-11
 
 #Note: CCCL will be removed in the upcoming months. CCCL doesnt support BIG-IP v14.1
 
+## Notes
+
+New features in CIS 1.11
+
+* OpenShift WAF policy support
+```
+virtual-server.f5.com/waf: /Common/WAF_Policy
+```
+* Alternative backend, blue/green support using weight
+Look for the example f5-demo-app-route-ab
+
+Additional features coming soon
+
 ## Create openshift BIGIP controller authentication and RBAC
 ```
 oc create secret generic bigip-login --namespace kube-system --from-literal=username=admin --from-literal=password=admin
@@ -57,6 +70,8 @@ oc create -f f5-demo-app-route-balance.yaml -n f5demo
 oc create -f f5-demo-app-route-edge-ssl.yaml -n f5demo
 oc create -f f5-demo-app-route-reencrypt-ssl.yaml -n f5demo
 oc create -f f5-demo-app-route-passthrough-ssl.yaml -n f5demo
+oc create -f f5-demo-app-route-waf.yaml -n f5demo
+oc create -f f5-demo-app-route-ab.yaml -n f5demo
 ```
 Please look for example files in my repo
 
@@ -69,16 +84,6 @@ oc delete -f f5-demo-app-route-balance.yaml -n f5demo
 oc delete -f f5-demo-app-route-edge-ssl.yaml -n f5demo
 oc delete -f f5-demo-app-route-reencrypt-ssl.yaml -n f5demo
 oc delete -f f5-demo-app-route-passthrough-ssl.yaml -n f5demo
+oc delete -f f5-demo-app-route-waf.yaml -n f5demo
+oc delete -f f5-demo-app-route-ab.yaml -n f5demo
 ```
-## Notes
-
-New features in CIS 1.11
-
-* OpenShift WAF policy support
-```
-virtual-server.f5.com/waf: /Common/WAF_Policy
-```
-* Alternative backend, blue/green support using weight
-Look for the example f5-demo-app-route-ab
-
-Additional features coming soon
