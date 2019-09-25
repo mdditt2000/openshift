@@ -8,6 +8,7 @@ Waiting for a merge request of all the features. Merge coming soon
 
 * CIS waf build: subbuv26/k8s-bigip-ctlr:waf2
 * CIS a/b build: amit49g/k8s-bigip-ctlr:ab-support
+* CIS route status build: somanchit/k8s-bigip-ctlr:oscp-gui-fix-build-1
 * AS3: 3.13.1
 * BIG-IP 14.1
 
@@ -45,7 +46,8 @@ virtual-server.f5.com/waf: /Common/WAF_Policy
 * Alternative backend, blue/green support using weight
 Look for the example f5-demo-app-route-ab
 
-Additional features coming soon
+* Route status update in OpenShift Dashboard
+The router name must not be router
 
 ## Create openshift BIGIP controller authentication and RBAC
 ```
