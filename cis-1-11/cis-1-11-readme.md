@@ -6,9 +6,8 @@ This page is created to provide early access to CIS 1.11 to provide PM with feed
 
 Waiting for a merge request of all the features. Merge coming soon
 
-* CIS waf build: subbuv26/k8s-bigip-ctlr:waf4
-* CIS a/b build: amit49g/k8s-bigip-ctlr:ab-support
-* CIS route status build: somanchit/k8s-bigip-ctlr:oscp-gui-fix-build-1
+* CIS build ssurenr/k8s-bigip-ctlr:1.11-cf2
+* CIS route status build: ssurenr/k8s-bigip-ctlr:1.11-cf2-route-status
 * AS3: 3.13.1
 * BIG-IP 14.1
 
