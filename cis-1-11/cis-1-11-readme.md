@@ -20,10 +20,6 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 Add argument in the CIS controller deployment to use “as3” path with OpenShift. If using a configmap with AS3 you dont need this aurgument
  ```
  --agent=as3
- ```
-To use “cccl” path then use the below argument
- ```
- --agent=cccl
 ```
 If you using BIGIP self-signed certs please add or schema validation will fail
  ```
