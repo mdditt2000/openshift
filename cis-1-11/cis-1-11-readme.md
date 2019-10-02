@@ -6,8 +6,7 @@ This page is created to provide early access to CIS 1.11 to provide PM with feed
 
 Waiting for a merge request of all the features. Merge coming soon
 
-* CIS build ssurenr/k8s-bigip-ctlr:1.11-cf2
-* CIS route status build: ssurenr/k8s-bigip-ctlr:1.11-cf2-route-status
+* CIS ssurenr/k8s-bigip-ctlr:1.11-cf2-route-status
 * AS3: 3.13.1
 * BIG-IP 14.1
 
@@ -41,14 +40,13 @@ New features in CIS 1.11
 * OpenShift WAF policy support
 ```
 virtual-server.f5.com/waf: /Common/WAF_Policy
-```
-Unable to use two different WAF Policy with two different routes (#110) 
+``` 
 
 * Alternative backend, blue/green support using weight
 Look for the example f5-demo-app-route-ab
 
 * Route status update in OpenShift Dashboard
-The router name must not be router
+Route-status image with OCP 3.11 support
 
 ## Create openshift BIGIP controller authentication and RBAC
 ```
