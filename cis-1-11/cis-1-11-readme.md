@@ -4,9 +4,9 @@ This page is created to provide early access to CIS 1.11 to provide PM with feed
 
 # Note
 
-Waiting for a merge request of all the features. Merge coming soon
+Merged features
 
-* CIS ssurenr/k8s-bigip-ctlr:1.11-cf2-route-status
+* CIS somanchit/k8s-bigip-ctlr:1.11-cf3
 * AS3: 3.13.1
 * BIG-IP 14.1
 
