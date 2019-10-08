@@ -29,6 +29,10 @@ Example folder https://github.com/mdditt2000/openshift/tree/dev/cis-1-11
 
 #Note: CCCL will be removed in the upcoming months. CCCL doesnt support BIG-IP v14.1
 
+### CIS 1.11 service account changes:
+
+oc adm policy add-cluster-role-to-user cluster-admin -z bigip-ctlr -n kube-system
+
 ## Notes
 
 New features in CIS 1.11
